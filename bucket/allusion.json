@@ -1,0 +1,34 @@
+{
+    "version": "1.13.1-ruc",
+    "description": "Allusion - Visual reference manager (RafaUC modified fork)",
+    "homepage": "https://github.com/RafaUC/Allusion",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/RafaUC/Allusion/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
+            "hash": "e1e6ea851ab49a43532b494e81951247ce9e980ca0f3491a65f5a05307b27fd6"
+        }
+    },
+    "bin": "AllusionPortable.$version.exe",
+    "shortcuts": [
+        [
+            "AllusionPortable.$version.exe",
+            "Allusion"
+        ]
+    ],
+    "persist": "userData",
+    "checkver": {
+        "github": "https://github.com/RafaUC/Allusion"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe"
+
+            }
+        }
+    }
+}
